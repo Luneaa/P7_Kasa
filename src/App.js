@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Home from './pages/home';
 import About from './pages/about';
 import Logement from './pages/logement';
@@ -7,7 +6,7 @@ import NotFound from './pages/notfound';
 import Layout from './components/Layout/Layout';
 
 import { Routes, Route, Link } from "react-router-dom";
-import './App.css';
+import './App.scss';
 
 
 
