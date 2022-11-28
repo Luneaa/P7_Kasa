@@ -5,8 +5,8 @@ import './Footer.scss';
 const Footer = () => {
     return (
         <footer>
-            <div><Logo /></div>
-            <div><p>© 2020 Kasa. All rights reserved</p></div>
+            <div className='footer__logo'><Logo /></div>
+            <div className='footer__copyright'><p>© 2020 Kasa. All rights reserved</p></div>
         </footer>
     );
 };
