@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Tag from "../../components/Tag/Tag";
 
 function About() {
     return (
@@ -6,8 +7,7 @@ function About() {
             <main>
                 <h2>Who are we?</h2>
                 <p>
-                    That feels like an existential question, don't you
-                    think?
+                    <Tag tagName='cozy'/>
                 </p>
             </main>
             <nav>

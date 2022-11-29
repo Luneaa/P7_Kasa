@@ -1,7 +1,7 @@
-import Home from './pages/home';
-import About from './pages/about';
-import Logement from './pages/logement';
-import NotFound from './pages/notfound';
+import Home from './pages/Home/home';
+import About from './pages/About/about';
+import Logement from './pages/Logement/logement';
+import NotFound from './pages/Notfound/notfound';
 
 import Layout from './components/Layout/Layout';
 
