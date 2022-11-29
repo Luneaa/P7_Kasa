@@ -6,7 +6,7 @@ function Home() {
         <>
             <section>
                 <div className="banner">
-                    <div className="banner__color"><img src={require("./banner.png")} /></div>
+                    <div className="banner__color"><img src={require("./banner.png")}/></div>
 
                     <p>Chez vous, partout et ailleurs</p>
                 </div>
