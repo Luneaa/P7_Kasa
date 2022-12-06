@@ -8,7 +8,8 @@
     &__color {
         background-color: #000000;
         width: 100%;
-        border-radius: 25px;
+        border-radius: 28px;
+        height: 223px;
     }
 
     img {
@@ -16,6 +17,8 @@
         border-radius: 25px;
         width: 100%;
         opacity: 90%;
+        height: 223px;
+        object-fit: cover;
     }
 
     p {
@@ -23,9 +26,9 @@
         font-size: 48px;
         font-weight: 500;
         position: absolute;
-        left: 25%;
-        right: 25%;
-        top: 50%;
-        bottom: 50%;
+        left: 10%;
+        right: 10%;
+        top: 45%;
+
     }
 }
