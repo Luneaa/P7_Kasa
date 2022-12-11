@@ -8,6 +8,15 @@
     opacity: 90%;
     position: relative;
 
+    &__cover{
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 10px;
+        left: 0;
+    }
+
     h2 {
         font-weight: 500;
         font-size: 18px;

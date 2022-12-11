@@ -32,3 +32,17 @@
 
     }
 }
+
+.logements{
+    background-color: $secondary-color;
+    border-radius: 25px;
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+
+    &__item{
+        padding: 25px;
+}
+}
