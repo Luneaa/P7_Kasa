@@ -1,0 +1,26 @@
+@import "../../styles/shared";
+
+.error{
+    &__title{
+        font-weight: 700;
+        font-size: 288px;
+        color: $primary-color;
+        margin: 186px 0 66px 0;
+    }
+    &__content{
+        font-weight: 500;
+        font-size: 36px;
+        color: $primary-color;
+        margin-bottom: 186px;
+    }
+    &__nav{
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-color;
+        margin-bottom: 160px;
+        a:visited {
+            color: $primary-color;
+        }
+    }
+}
+

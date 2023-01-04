@@ -18,7 +18,7 @@ function Home() {
             <section>
                 <div className="logements">
                     {
-                        data.map((logement, index) => {
+                        data.map((logement) => {
                             return (
                                 <div className="logements__item" key={logement.id} >
                                     <Thumb title={logement.title} cover={logement.cover} id={logement.id} />

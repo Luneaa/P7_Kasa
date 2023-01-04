@@ -1,7 +1,16 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
+
+
+import data from '../../logements.json'
 
 function Logement() {
     let params = useParams();
+
+    if(data.every(l => l.id !== params.id)) {
+        return(
+            <Navigate replace to="/404" />
+        );
+    }
     return (
         <>
             <main>
