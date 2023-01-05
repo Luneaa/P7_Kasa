@@ -35,16 +35,15 @@
         transition-property: max-height padding-top padding-bottom;
         transition-duration: 0.6s;
         transition-timing-function: ease-in-out;
-
+        p {
+            padding: 30px 20px 20px 20px;
+        }
         &--open {
             max-height: 500px;
-
-            padding: 30px 20px 20px 20px;
         }
         &--close {
             max-height: 0px;
             overflow: hidden;
-
             padding: 0;
         }
     }

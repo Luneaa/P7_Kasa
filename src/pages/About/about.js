@@ -25,9 +25,6 @@ function About() {
                 </section>
 
             </main>
-            <nav>
-                <Link to="/">Home</Link>
-            </nav>
         </>
     );
 }
