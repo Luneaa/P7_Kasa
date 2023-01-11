@@ -37,6 +37,8 @@
         transition-timing-function: ease-in-out;
         p {
             padding: 30px 20px 20px 20px;
+            white-space: pre-line;
+            line-height: 25px;
         }
         &--open {
             max-height: 500px;

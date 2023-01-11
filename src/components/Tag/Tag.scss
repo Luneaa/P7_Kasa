@@ -1,7 +1,7 @@
 @import "../../styles/shared";
 
 .tag {
-    width: 115px;
+    min-width: 115px;
     height: 25px;
     border-radius: 10px;
     background-color: $primary-color;

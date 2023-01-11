@@ -1,0 +1,54 @@
+@import "../../styles/shared";
+
+.star--active path {
+    fill: $primary-color;
+}
+.infos {
+
+    &__metadata {
+        display: flex;
+        justify-content: space-between;
+
+
+        &__tags {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h1{
+                font-size: 36px;
+                color: $primary-color;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+            p {
+                font-size: 18px;
+                color: $primary-color;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+        &__host{
+            display: flex;
+            align-items: center;
+            p {
+                color: $primary-color;
+                font-size: 18px;
+                padding-right: 10px;
+            }
+            img {
+                border-radius: 50%;
+                height: 64px;
+            }
+        }
+        
+    }
+}
