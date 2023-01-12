@@ -11,7 +11,7 @@ const Collapse = (props) => {
         <div className="collapse">
             <button className="collapse__title" onClick={toogle}>
                 <h3>{props.title}</h3>
-                <Arrow className="collapse__title__arrow"/>
+                <Arrow className={`collapse__title__arrow ${open ? "collapse__title__arrow--open" : "collapse__title__arrow--close"}`}/>
             </button>
                 <div className={`collapse__content ${open ? "collapse__content--open" : "collapse__content--close"}`}>
                 <p>

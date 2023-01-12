@@ -2,14 +2,20 @@
 
 .star--active path {
     fill: $primary-color;
+
+}
+.star--active, .star--inactive{
+    margin-left: 10px;
 }
 .infos {
+    border: rgb(204, 0, 255) 2px solid;
+    margin: 0 5%;
 
     &__metadata {
         display: flex;
         justify-content: space-between;
-
-
+        border: rgb(196, 178, 25) 2px solid;
+        padding: 15px 0;
         &__tags {
             display: flex;
             flex-direction: row;
@@ -18,7 +24,7 @@
     &__header {
         display: flex;
         justify-content: space-between;
-
+        border: aqua 2px solid;
         &__title {
             display: flex;
             flex-direction: column;
@@ -39,6 +45,8 @@
         &__host{
             display: flex;
             align-items: center;
+        border: rgb(105, 16, 53) 2px solid;
+
             p {
                 color: $primary-color;
                 font-size: 18px;
@@ -50,5 +58,17 @@
             }
         }
         
+    }
+    &__detail {
+        display: flex;
+        padding-bottom: 15px;
+        &__description{
+            margin-right: 35px;
+            width: 50%;
+        }
+        &__equipement{
+            margin-left: 35px;
+            width: 50%;
+        }
     }
 }

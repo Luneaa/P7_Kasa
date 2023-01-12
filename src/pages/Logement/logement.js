@@ -48,8 +48,14 @@ function Logement() {
                         </div>
                     </div>
                     <div className='infos__detail'>
-                        <Collapse title="Description" content={logement.description} />
-                        <Collapse title="Équipements" content={logement.equipments.map((e, id) => e+"\n")}/>
+                    <div className='infos__detail__description'>
+                    <Collapse title="Description" content={logement.description} />
+                    </div>
+                    <div className='infos__detail__equipement'>
+                    <Collapse title="Équipements" content={logement.equipments.map((e, id) => e+"\n")} />
+                    </div>
+
+
                     </div>
 
                 </section>
