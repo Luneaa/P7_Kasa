@@ -31,3 +31,17 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 767px)
+{
+    .header__logo {
+        width: 145px;
+    }
+    .header__nav{
+        ul{
+            li{
+                font-size: 12px;
+            }
+        }
+    }
+}

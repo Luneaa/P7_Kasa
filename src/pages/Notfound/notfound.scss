@@ -11,7 +11,7 @@
         font-weight: 500;
         font-size: 36px;
         color: $primary-color;
-        margin-bottom: 186px;
+        margin: 0 50px 186px 50px;
     }
     &__nav{
         font-weight: 500;
@@ -24,3 +24,18 @@
     }
 }
 
+@media screen and (max-width: 767px)
+{
+    .error{
+        &__title{
+            font-size: 96px;
+        }
+        &__content{
+            font-size: 18px;
+            margin: 0 50px 186px 50px;
+        }
+        &__nav{
+            font-size: 14px;
+        }
+    }
+}
