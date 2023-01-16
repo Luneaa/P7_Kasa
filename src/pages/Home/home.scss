@@ -1,6 +1,6 @@
 @import "../../styles/shared";
 
-.banner {
+.home__banner {
 
     padding: 63px 100px 43px 100px;
     position: relative;
@@ -49,11 +49,18 @@
 
 @media screen and (max-width: 767px)
 {
-    .banner {
-        padding: 20px;
+    .home__banner {
+        padding: 20px 7%;
 
         p{
             font-size: 24px;
         }
+    }
+    .logements{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0%;
     }
 }

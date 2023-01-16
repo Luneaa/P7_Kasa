@@ -1,6 +1,6 @@
 @import "../../styles/shared";
 
-.banner {
+.about__banner {
 
     padding: 63px 100px 43px 100px;
     position: relative;
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 767px)
 {
-    .banner{
+    .about__banner{
         padding: 20px;
     }
     .about{

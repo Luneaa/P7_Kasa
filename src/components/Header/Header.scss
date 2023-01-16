@@ -7,7 +7,7 @@ header {
 
     .header__logo {
         width: 210.32px;
-        padding: 40px 0 0 100px;
+        margin: 5% 0 0 8%;
     }
     .header__nav {
         padding: 57px 100px 0 0;
@@ -34,14 +34,15 @@ header {
 
 @media screen and (max-width: 767px)
 {
-    .header__logo {
-        width: 145px;
-    }
-    .header__nav{
-        ul{
-            li{
-                font-size: 12px;
+    header{
+
+        .header__nav{
+            ul{
+                li{
+                    font-size: 12px;
+                }
             }
         }
     }
+    
 }
