@@ -27,6 +27,7 @@ function Logement() {
                     <Gallery image={logement.pictures[0]} />
                 </section>
                 <section className='infos'>
+                <div className='infos__wrap'>
                     <div className='infos__header'>
                         <div className='infos__header__title'>
                             <h1>{logement.title}</h1>
@@ -46,6 +47,7 @@ function Logement() {
                             {
                                 ratings.map((r, id) => <Star className={r} key={id} />)
                             }
+                        </div>
                         </div>
                     </div>
                     <div className='infos__detail'>
