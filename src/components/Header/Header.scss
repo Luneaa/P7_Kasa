@@ -4,13 +4,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px;
 
-    .header__logo {
-        width: 210.32px;
-        margin: 5% 0 0 8%;
-    }
     .header__nav {
-        padding: 57px 100px 0 0;
+
         ul{
             display: flex;
             flex-direction: row;

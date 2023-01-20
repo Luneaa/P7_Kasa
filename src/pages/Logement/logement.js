@@ -32,14 +32,15 @@ function Logement() {
                             <h1>{logement.title}</h1>
                             <p>{logement.location}</p>
                         </div>
-                        <div className='infos__header__host'>
-                            <p>{logement.host.name}</p>
-                            <div className='infos__header__host__picture'><img src={logement.host.picture} alt={logement.host.name} /></div>
+                        <div className='infos__header__tags'>
+                            {logement.tags.map(t => <Tag tagName={t} key={t} />)}
                         </div>
                     </div>
                     <div className='infos__metadata'>
-                        <div className='infos__metadata__tags'>
-                            {logement.tags.map(t => <Tag tagName={t} key={t} />)}
+                        
+                        <div className='infos__metadata__host'>
+                            <p>{logement.host.name}</p>
+                            <div className='infos__metadata__host__picture'><img src={logement.host.picture} alt={logement.host.name} /></div>
                         </div>
                         <div className='infos__metadata__rating'>
                             {
