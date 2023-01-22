@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { ReactComponent as Star } from './star.svg';
 
 import data from '../../logements.json'
-import Gallery from '../../components/Gallery/Gallery';
+import Gallery, { GalleryItem } from '../../components/Gallery/Gallery';
 import Tag from '../../components/Tag/Tag';
 import Collapse from '../../components/Collapse/Collapse';
 
@@ -23,8 +23,10 @@ function Logement() {
     return (
 
             <main>
-                <section>
-                    <Gallery image={logement.pictures[0]} />
+                <section className='logement__gallery'>
+                    <Gallery>
+                        {logement.pictures.map((p, id) => <GalleryItem><img src={p} key={id} /></GalleryItem>)}
+                    </Gallery>
                 </section>
                 <section className='infos'>
                 <div className='infos__wrap'>

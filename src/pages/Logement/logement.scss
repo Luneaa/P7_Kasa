@@ -7,6 +7,11 @@
 .star--active, .star--inactive{
     margin-left: 10px;
 }
+
+.logement__gallery {
+    display: flex;
+    justify-content: center;
+}
 .infos__wrap{
     display: flex;
 }
