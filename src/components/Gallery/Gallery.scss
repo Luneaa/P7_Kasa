@@ -10,7 +10,6 @@
 
 .gallery {
     overflow: hidden;
-    width: 90%;
     border-radius: 25px;
     position: relative;
 
@@ -45,6 +44,11 @@
         left: 0;
         height: 100%;
 
+        svg{
+            width: 48px;
+            height: 80px;
+        }
+
         button {
             background: none;
             color: inherit;
@@ -63,5 +67,20 @@
         color: white;
         font-weight: 500;
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .gallery{
+        &__indicators{
+            svg{
+                width: 12px;
+                height: 20px;
+            }
+        }
+        &__count{
+            display: none;
+        }
     }
 }

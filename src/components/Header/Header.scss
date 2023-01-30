@@ -5,7 +5,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px;
+    padding: 40px 0;
+
+    svg{
+        width: 211px;
+        height: 68px;
+    }
 
     .header__nav {
 
@@ -33,11 +38,17 @@ header {
 @media screen and (max-width: 767px)
 {
     header{
+        padding: 20px 0;
 
+        svg{
+            width: 145px;
+            height: 47px;
+        }
         .header__nav{
             ul{
                 li{
-                    font-size: 12px;
+                    font-size: 15px;
+                    padding-left: 30px;
                 }
             }
         }

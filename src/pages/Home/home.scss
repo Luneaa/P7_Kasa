@@ -2,7 +2,7 @@
 
 .home__banner {
 
-    padding: 0 100px 43px 100px;
+    padding: 0 0 43px 0;
     position: relative;
 
     &__color {
@@ -36,11 +36,10 @@
 .logements{
     background-color: $secondary-color;
     border-radius: 25px;
-    margin: 0 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 25px;
+    padding: 25px 0;
 
     &__item{
         padding: 25px;
@@ -50,11 +49,10 @@
 @media screen and (max-width: 767px)
 {
     .home__banner {
-        padding: 20px 7%;
 
         p{
             font-size: 24px;
-            top: 45%;
+            top: 40%;
         }
     }
     .logements{
@@ -63,5 +61,9 @@
         flex-direction: column;
         flex-wrap: nowrap;
         margin: 0%;
+        padding: 0;
+        &__item{
+            padding: 25px 0;
+    }
     }
 }
