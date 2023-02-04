@@ -6,7 +6,7 @@ import { ReactComponent as Next } from "./next.svg";
 
 export const GalleryItem = ({ children, width }) => {
     return (
-        <div className="gallery__item" style={{ width: width}}>
+        <div className="gallery__item" style={{ width: width }}>
             {children}
         </div>
     );

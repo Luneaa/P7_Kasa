@@ -1,9 +1,5 @@
 import './about.scss';
-
-import { Link } from "react-router-dom";
 import Collapse from "../../components/Collapse/Collapse";
-import Tag from "../../components/Tag/Tag";
-
 
 function About() {
     return (
@@ -11,7 +7,7 @@ function About() {
             <main>
                 <section>
                     <div className="about__banner">
-                        <div className="about__banner__color"><img src={require("./banner.png")} /></div>
+                        <div className="about__banner__color"><img src={require("./banner.png")} alt="Photographie de montagne"/></div>
                     </div>
                 </section>
                 <section className='about'>
