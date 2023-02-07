@@ -12,12 +12,12 @@ export const GalleryItem = ({ children, width }) => {
     );
 };
 
-const Gallery = ({children}) => {
+const Gallery = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const updateIndex = (newIndex) => {
-        if (newIndex < 0 ) {
-            newIndex = React.Children.count(children) -1;
+        if (newIndex < 0) {
+            newIndex = React.Children.count(children) - 1;
         } else if (newIndex >= React.Children.count(children)) {
             newIndex = 0;
         }
@@ -32,23 +32,28 @@ const Gallery = ({children}) => {
                     return React.cloneElement(child, { width: "100%" });
                 })}
             </div>
-            
-            <div className="gallery__indicators">
-                <button onClick={() => {
-                    updateIndex(activeIndex - 1);
-                }}>
-                    <Prev />
-                </button>
 
+            <div className="gallery__indicators">
+                {
+                    React.Children.count(children) != 1 &&
+                    <button onClick={() => {
+                        updateIndex(activeIndex - 1);
+                    }}>
+                        <Prev />
+                    </button>
+                }
                 <div className="gallery__count">
                     {activeIndex + 1} / {React.Children.count(children)}
                 </div>
 
-                <button onClick={() => {
-                    updateIndex(activeIndex + 1);
-                }}>
-                    <Next />
-                </button>
+                {
+                    React.Children.count(children) != 1 &&
+                    <button onClick={() => {
+                        updateIndex(activeIndex + 1);
+                    }}>
+                        <Next />
+                    </button>
+                    }
             </div>
         </div>
     );
