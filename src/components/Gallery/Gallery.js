@@ -35,7 +35,7 @@ const Gallery = ({ children }) => {
 
             <div className="gallery__indicators">
                 {
-                    React.Children.count(children) != 1 &&
+                    React.Children.count(children) !== 1 &&
                     <button onClick={() => {
                         updateIndex(activeIndex - 1);
                     }}>
@@ -47,7 +47,7 @@ const Gallery = ({ children }) => {
                 </div>
 
                 {
-                    React.Children.count(children) != 1 &&
+                    React.Children.count(children) !== 1 &&
                     <button onClick={() => {
                         updateIndex(activeIndex + 1);
                     }}>
