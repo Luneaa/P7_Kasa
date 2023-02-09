@@ -7,7 +7,7 @@ function About() {
             <main>
                 <section>
                     <div className="about__banner">
-                        <div className="about__banner__color"><img src={require("./banner.png")} alt="Photographie de montagne"/></div>
+                        <div className="about__banner__color"><img src={require("../../assets/banner_about.png")} alt="Photographie de montagne"/></div>
                     </div>
                 </section>
                 <section className='about'>

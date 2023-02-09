@@ -1,9 +1,5 @@
 @import "../../styles/shared";
 
-.star--active path {
-    fill: $primary-color;
-
-}
 .star--active, .star--inactive{
     margin-left: 10px;
 }
@@ -22,7 +18,7 @@
             &__rating {
                 display: flex;
                 justify-content: flex-end;
-                svg{
+                img{
                     width: 30px;
                     height: 30px;
                 }
@@ -121,7 +117,7 @@
             justify-content: space-between;
             padding: 0 0 15px 0;
             &__rating {
-                svg{
+                img{
                     width: 25px;
                     height: 25px;
                 }

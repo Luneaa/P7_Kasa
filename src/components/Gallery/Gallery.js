@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Gallery.scss';
-import { ReactComponent as Prev } from "./prev.svg";
-import { ReactComponent as Next } from "./next.svg";
+import prev from "../../assets/prev.svg";
+import next from "../../assets/next.svg";
 
 
 export const GalleryItem = ({ children, width }) => {
@@ -39,7 +39,7 @@ const Gallery = ({ children }) => {
                     <button onClick={() => {
                         updateIndex(activeIndex - 1);
                     }}>
-                        <Prev />
+                        <img src={prev} alt="Fleche précédente" />
                     </button>
                 }
                 <div className="gallery__count">
@@ -51,7 +51,7 @@ const Gallery = ({ children }) => {
                     <button onClick={() => {
                         updateIndex(activeIndex + 1);
                     }}>
-                        <Next />
+                        <img src={next} alt="Fleche suivante" />
                     </button>
                     }
             </div>

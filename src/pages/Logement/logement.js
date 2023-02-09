@@ -1,6 +1,7 @@
 import './logement.scss';
-import { Link, Navigate, useParams } from "react-router-dom";
-import { ReactComponent as Star } from './star.svg';
+import { Navigate, useParams } from "react-router-dom";
+import star from '../../assets/star.svg';
+import starActive from '../../assets/star-active.svg';
 
 import data from '../../logements.json'
 import Gallery, { GalleryItem } from '../../components/Gallery/Gallery';
@@ -18,7 +19,7 @@ function Logement() {
     let logement = data.find(l => l.id === params.id);
     let ratings = [];
     for (var i = 1; i <= 5; i++) {
-        ratings.push(i <= logement.rating ? "star--active" : "star--inactive");
+        ratings.push(i <= logement.rating ? starActive : star);
     }
     return (
 
@@ -47,7 +48,7 @@ function Logement() {
                         </div>
                         <div className='infos__metadata__rating'>
                             {
-                                ratings.map((r, id) => <Star className={r} key={id} />)
+                                ratings.map((r, id) => <img src={r} alt="Star icon" key={id} />)
                             }
                         </div>
                         </div>

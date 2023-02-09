@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as Arrow } from "./arrow.svg";
+import arrow from "../../assets/arrow.svg";
 import './Collapse.scss';
 
 const Collapse = (props) => {
@@ -11,7 +11,7 @@ const Collapse = (props) => {
         <div className="collapse">
             <button className="collapse__title" onClick={toogle}>
                 <h3>{props.title}</h3>
-                <Arrow className={`collapse__title__arrow ${open ? "collapse__title__arrow--open" : "collapse__title__arrow--close"}`}/>
+                <img src={arrow} alt="Arrow icon" className={`collapse__title__arrow ${open ? "collapse__title__arrow--open" : "collapse__title__arrow--close"}`}/>
             </button>
                 <div className={`collapse__content ${open ? "collapse__content--open" : "collapse__content--close"}`}>
                 <p>
