@@ -5,7 +5,7 @@ import NotFound from './pages/Notfound/notfound';
 
 import Layout from './components/Layout/Layout';
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.scss';
 
 
