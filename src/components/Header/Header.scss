@@ -29,6 +29,11 @@ header {
             text-decoration: none;
             color: $primary-color;
         }
+
+        .nav--underline a {
+            border-bottom: 3px solid;
+        }
+
         a:hover {
             border-bottom: 3px solid;
         }
