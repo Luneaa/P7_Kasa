@@ -26,7 +26,7 @@ function Logement() {
             <main>
                 <section className='logement__gallery'>
                     <Gallery>
-                        {logement.pictures.map((p, id) => <GalleryItem key={id}><img src={p} /></GalleryItem>)}
+                        {logement.pictures.map((p, id) => <GalleryItem key={id}><img src={p} alt="Photographie du logement" /></GalleryItem>)}
                     </Gallery>
                 </section>
                 <section className='infos'>

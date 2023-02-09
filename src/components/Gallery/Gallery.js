@@ -4,15 +4,16 @@ import prev from "../../assets/prev.svg";
 import next from "../../assets/next.svg";
 
 
-export const GalleryItem = ({ children, width }) => {
+export const GalleryItem = ({ children }) => {
     return (
-        <div className="gallery__item" style={{ width: width }}>
+        <div className="gallery__item">
             {children}
         </div>
     );
 };
 
 const Gallery = ({ children }) => {
+    
     const [activeIndex, setActiveIndex] = useState(0);
 
     const updateIndex = (newIndex) => {
@@ -22,14 +23,15 @@ const Gallery = ({ children }) => {
             newIndex = 0;
         }
 
+        document.documentElement.style.setProperty('--active-index', newIndex);
         setActiveIndex(newIndex);
     };
 
     return (
         <div className="gallery">
-            <div className="gallery__inner" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+            <div className="gallery__inner">
                 {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, { width: "100%" });
+                    return React.cloneElement(child);
                 })}
             </div>
 
